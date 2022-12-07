@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      'body' : 'Be-Vietnam-Pro',
+    },
     extend: {},
     colors: {
       orangePrimary: "#F25F3A",
