@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider{
+    margin: 0 auto;
+}
+#slide1:checked ~ .first{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .first{
+    margin-left: -103%;
+}
+#slide3:checked ~ .first{
+    margin-left: -207%;
+}
+#slide4:checked ~ .first{
+    margin-left: -310%;
+}
+
+#slide2:checked ~ .navigation-auto .auto-btn2{
+    background-color: orange;
+}
+#slide3:checked ~ .navigation-auto .auto-btn3{
+    background-color: orange;
+}
+#slide4:checked ~ .navigation-auto .auto-btn4{
+    background-color: orange;
+}
+#slide1:checked ~ .navigation-auto .auto-btn1{
+    border:4px solid orange;
+}

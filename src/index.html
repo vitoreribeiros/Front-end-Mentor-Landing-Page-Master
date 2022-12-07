@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+  <script src="https://kit.fontawesome.com/73545b2012.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body class="bg-auto " >
+ <main class="md:w-11/12 mx-auto md:max-w-screen-lg overflow-x-hidden bg-no-repeat bg-right-top "  style="background-image:url('../images/bg-tablet-pattern.svg')">
+   
+     <header class="py-4 flex justify-around h-18 mt-8 mx-auto">
+        <img src="../images/logo.svg" alt="" class="my-auto max-h-8 cursor-pointer">
+       <ul class="hidden md:flex justify-between text-sm my-auto">
+         <li class="px-3 hover:text-darkGrayishBlue cursor-pointer">Pricing</li>
+         <li class="px-3  hover:text-darkGrayishBlue cursor-pointer">Product</li>
+         <li class="px-3  hover:text-darkGrayishBlue cursor-pointer">About Us</li>
+         <li class="px-3  hover:text-darkGrayishBlue cursor-pointer">Careers</li>
+         <li class="px-3  hover:text-darkGrayishBlue cursor-pointer">Community</li>
+       </ul>
+       <button class="bg-orangePrimary btn px-6 py-2 rounded-3xl text-LightGray font-bold hidden md:block shadow-orangePrimary shadow-md hover:brightness-150">Get Started</button>
+       <button id="hambuguer" class="h-12"><img src="../images/icon-hamburger.svg" alt="" class="md:hidden w-10  box-content cursor-pointer" ></button>
+       <button id="hambuguer-close" class="hidden h-12"><img src="../images/icon-close.svg" alt="" class="md:hidden w-10  box-content cursor-pointer " ></button>
+
+       <div class="absolute w-10/12 h-72 bg-LightGray mt-20 hidden" id="hamburguer-menu">
+        <ul class="justify-between mx-auto text-center align-middle">
+          <li class="mt-6 hover:text-darkGrayishBlue cursor-pointer">Pricing</li>
+          <li class="mt-6  hover:text-darkGrayishBlue cursor-pointer">Product</li>
+          <li class="mt-6  hover:text-darkGrayishBlue cursor-pointer">About Us</li>
+          <li class="mt-6  hover:text-darkGrayishBlue cursor-pointer">Careers</li>
+          <li class="mt-6  hover:text-darkGrayishBlue cursor-pointer">Community</li>
+        </ul>
+       </div>
+
+     </header>
+
+
+      <section class="md:flex mt-12 justify-evenly w-11/12 mx-auto ">
+        <img src="../images/illustration-intro.svg" alt="" class="md:order-2 mx-auto">
+        <div class=" w-full md:w-2/5 text-center my-auto md:order-1">
+          <h1 class="text-5xl font-bold md:text-left text-darkBlue">Bring everyone together to build better products.</h1>
+          <p class="text-darkGrayishBlue my-8 md:w-3/4 md:text-left">
+            Manage makes it simple for software teams to plan day-to-day
+            tasks while keeping the larger team goals in view.
+          </p>
+          <div class="w-full text-center md:text-left mb-8 relative">
+            <button class="bg-orangePrimary text-sm btn px-10 py-3 rounded-3xl text-LightGray font-bold  shadow-orangePrimary shadow-md hover:brightness-150">Get Started</button>
+            <img src="../images/bg-tablet-pattern.svg" alt="" class="absolute -z-10 w-3/4 -right-1/2 -top-60 md:hidden">
+          </div>
+        </div>
+       </section>
+
+
+      <section class="md:flex justify-evenly w-11/12 mx-auto mt-32 ">
+        <div class="w-3/4 md:w-1/2 text-center md:text-left mx-auto">
+          <h3 class="text-4xl font-bold w-full text-darkBlue">What’s different about Manage?</h3>
+          <p class="text-gray-400 mt-12 md:w-10/12 text-darkGrayishBlue">
+            Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams.
+          </p>
+        </div>
+   
+          <div class="md:w-3/4">
+            <div class="flex mt-4">
+              <span class="text-LightGray bg-orangePrimary px-6 py-1 rounded-3xl ">01 </span>
+              <span class="bg-veryPaleRed w-full relative -left-4 -z-10 md:bg-transparent">
+                <h6 class="text-lg font-bold ml-8 max-[450px]:text-base text-darkBlue">Track company-wide progress</h6>
+              </span>
+            </div>
+              <p class="ml-20 text-sm text-darkGrayishBlue">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+            <div class="flex mt-4">
+              <span class="text-LightGray bg-orangePrimary px-6 py-1 rounded-3xl">02</span>
+              <span class="bg-veryPaleRed w-full relative -left-4 -z-10 md:bg-transparent">
+              <h6 class="text-lg font-bold ml-8 max-[450px]:text-base text-darkBlue">Advanced built-in reports</h6>
+              </span>
+            </div>
+            <p class="ml-20 text-sm text-darkGrayishBlue">
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build  out the reports
+              you need to keep key stakeholders informed.
+            </p>
+            <div class="flex  mt-4">
+              <span class="text-LightGray bg-orangePrimary px-6 py-1 rounded-3xl">03</span>
+              <span class="bg-veryPaleRed w-full relative -left-4 -z-10 md:bg-transparent">
+              <h6 class="text-lg font-bold ml-8 max-[450px]:text-base text-darkBlue ">Everything you need in one place</h6>
+              </span>
+            </div>
+             <p class="ml-20 text-sm text-darkGrayishBlue">
+              Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.
+            </p>
+          </div>
+      </section>
+    <section class="w-11/12 md:w-full mx-auto text-center mt-24  min-h-full">
+      <h2 class="text-4xl font-bold text-darkBlue">What they’ve said</h2>
+      <div class="mx-auto slider ">
+        <div class="slides flex md:max-w-full relative md:static mt-36 gap-4 md:grid-cols-4">
+          <input type="radio" name="radio-btn" id="slide1" class="hidden">
+          <input type="radio" name="radio-btn" id="slide2" class="hidden">
+          <input type="radio" name="radio-btn" id="slide3" class="hidden">
+          <input type="radio" name="radio-btn" id="slide4" class="hidden">
+
+            <div class="bg-LightGray min-w-full md:min-w-min first rounded-lg md:h-72" id="slideCards">
+              <img src="../images/avatar-anisha.png" alt="" class="mx-auto -translate-y-1/2 md:w-1/2" >
+              <h4 class="text-xl font-bold -mt-12 md:-mt-8 text-darkBlue">Anisha Li</h4>
+              <p class="w-10/12 mx-auto mt-8 pb-8 md:mt-4 md:text-sm text-darkGrayishBlue">
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+            <div class="bg-LightGray min-w-full md:min-w-min rounded-lg  md:h-72" id="slideCards">
+              <img src="../images/avatar-ali.png" alt="" class="mx-auto -translate-y-1/2 md:w-1/2">
+              <h4 class="text-xl font-bold -mt-12 md:-mt-8 text-darkBlue">Ali Bravo</h4>
+              <p class="w-10/12 mx-auto mt-8 pb-8 md:mt-4 md:text-sm text-darkGrayishBlue">
+                “We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+              </p>
+            </div>
+            <div class="bg-LightGray min-w-full md:min-w-min rounded-lg  md:h-72" id="slideCards">
+              <img src="../images/avatar-richard.png" alt="" class="mx-auto -translate-y-1/2 md:w-1/2">
+              <h4 class="text-xl font-bold -mt-12 md:-mt-8 text-darkBlue">Richard Watts</h4>
+            <p class="w-10/12 mx-auto mt-8 pb-8 md:mt-4 md:text-sm text-darkGrayishBlue">
+                “Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+            <div class="bg-LightGray min-w-full md:min-w-min rounded-lg  md:h-72" id="slideCards">
+              <img src="../images/avatar-shanai.png" alt="" class="mx-auto -translate-y-1/2 md:w-1/2">
+              <h4 class="text-xl font-bold -mt-12 md:-mt-8 text-darkBlue">Shanai Gough</h4>
+              <p class="w-10/12 mx-auto mt-8 pb-8 md:mt-4 md:text-sm text-darkGrayishBlue ">
+                “Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+                Get Started
+              </p>
+            </div>
+            <div class="manual-navigation absolute flex -bottom-6 gap-2 left-1/2 -translate-x-1/2 md:hidden">
+              <label for="slide1" class="manual-slider border-orangePrimary border-2 p-1 rounded-full hover:bg-orangePrimary"></label>
+              <label for="slide2" class="manual-slider border-orangePrimary border-2 p-1 rounded-full hover:bg-orangePrimary"></label>
+              <label for="slide3" class="manual-slider border-orangePrimary border-2 p-1 rounded-full hover:bg-orangePrimary"></label>
+              <label for="slide4" class="manual-slider border-orangePrimary border-2 p-1 rounded-full hover:bg-orangePrimary"></label>
+            </div>
+          </div>
+      </div>
+      <button class="bg-orangePrimary text-sm btn px-10 py-3 rounded-3xl text-LightGray font-bold my-16  shadow-orangePrimary shadow-md hover:brightness-150">Get Started</button>
+    </section>
+  </main>
+   
+   
+   <section class="mt-12 mx-auto bg-orangePrimary bg-cover min-w-full" style="background-image:url('../images/bg-simplify-section-desktop.svg') ;">
+      <div class="h-full text-center grid place-items-center md:flex justify-evenly md:px-4 py-16  mx-auto  md:text-left">
+        <h2 class="text-5xl font-bold text-LightGray my-8 md:w-1/2">Simplify how your team works today.</h2>
+             <button class="bg-LightGray text-sm btn px-10 py-3 rounded-3xl text-orangePrimary font-bold my-auto hover:brightness-150">Get Started</button>
+      </div>
+   </section>
+
+   <section class="bg-darkBlue text-LightGray pb-6">
+    <div class=" grid mx-auto md:grid-cols-3 md:grid">
+        <div class="order-9 grid mx-auto w-10/12 mt-8 md:order-first md:w-11/12">
+          <img src="../images/logo-white.svg" alt="" class="order-last mt-6 mx-auto md:order-first">
+           <ul class="flex justify-evenly md:justify-center md:gap-2 md:mt-8">
+            <li class="text-3xl cursor-pointer hover:text-orangePrimary"><i class="fa-brands fa-square-facebook" ></i></li>
+            <li class="text-3xl cursor-pointer hover:text-orangePrimary"><i class="fa-brands fa-youtube"></i></li>
+            <li class="text-3xl cursor-pointer hover:text-orangePrimary"><i class="fa-brands fa-square-twitter"></i></li>
+            <li class="text-3xl cursor-pointer hover:text-orangePrimary"><i class="fa-brands fa-pinterest"></i></li>
+            <li class="text-3xl cursor-pointer hover:text-orangePrimary"><i class="fa-brands fa-instagram"></i></li>
+           </ul>
+        </div>
+        <div class="flex justify-evenly order-2 mt-8 ">
+          <ul class="grid gap-y-2">
+            <li class="hover:text-orangePrimary cursor-pointer">Home</li>
+            <li class="hover:text-orangePrimary cursor-pointer">Pricing</li>
+            <li class="hover:text-orangePrimary cursor-pointer">Products</li>
+            <li class="hover:text-orangePrimary cursor-pointer">About Us</li>
+          </ul>
+          <ul class="grid gap-y-2">
+            <li class="hover:text-orangePrimary cursor-pointer">Careers</li>
+            <li class="hover:text-orangePrimary cursor-pointer">Community</li>
+            <li class="hover:text-orangePrimary cursor-pointer">Privacy Policy</li>
+          </ul>
+        </div>
+      
+         <div class="order-1 w-full mx-auto text-center mt-8 md:order-last ">
+          <div class="md:flex">
+            <input type="email" placeholder="   Updates in your inbox…" class="py-2 rounded-3xl w-72 mr-2 md:h-12 my-auto text-darkBlue">
+            <button class="text-slate-100 text-sm btn px-6 py-3 rounded-3xl bg-orangePrimary font-bold my-auto hover:brightness-150">Go</button>
+          </div>
+        <div class="hidden md:inline text-left mt-36"><p class="text-xs text-gray-400">Copyright 2020. All Rights Reserved</p></div>
+        </div>
+        <div class="md:text-left md:hidden text-center mt-12 order-last"><p class="text-xs text-gray-400">Copyright 2020. All Rights Reserved</p></div>
+      </div>
+
+   </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://vitorribeiro-portfolio.netlify.app">Vitor Ribeiro</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
